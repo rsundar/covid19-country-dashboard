@@ -16,18 +16,18 @@ test('should handle a country\'s data being added to the store', () => {
   };
 
   const newState = reducer(previousState, addCountry({
-    name: 'India',
-    id: 'india',
-    total_confirmed: 33417390,
+    name: 'Vanuatu',
+    id: 'vanuatu',
+    total_confirmed: 4,
   }));
 
   expect(newState).toEqual(
     {
       countries: [
         {
-          id: 'india',
-          name: 'India',
-          total_confirmed: 33417390,
+          id: 'vanuatu',
+          name: 'Vanuatu',
+          total_confirmed: 4,
         },
       ],
       totalConfirmed: 0,

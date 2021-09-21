@@ -1,13 +1,26 @@
-import { Route, Switch } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Navbar } from 'react-bootstrap';
+import {
+  Link, Route, Switch, useLocation,
+} from 'react-router-dom';
 import AppDetails from './Components/appDetail';
 import Home from './Components/home';
 import './App.css';
 
 function App() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <>
       <header>
-        <h3 className="m-0">COVID-19 CASELOAD</h3>
+        <Navbar className="px-4 text-white bg-blue1 d-flex justify-content-between">
+          <Link to="/" className="text-decoration-none text-white fw-bold">
+            HOME
+          </Link>
+          <h3 className="m-0">COVID-19 CASELOAD</h3>
+        </Navbar>
       </header>
       <main>
         <Switch>
