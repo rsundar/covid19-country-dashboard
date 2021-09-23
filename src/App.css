@@ -2,20 +2,20 @@
 * {
     margin: 0;
     padding: 0;
-  }
+}
   
-  .bg-blue2 {
-    background: rgba(44, 32, 211, 0.925);
-  }
+.bg-blue2 {
+  background: rgba(44, 32, 211, 0.925);
+}
   
-  .bg-blue1 {
-    background-color: #4b26ee !important;
-  }
+.bg-blue1 {
+  background-color: #4b26ee !important;
+}
   
-  body {
-    background-color: #6fa7e7 !important;
-  }
+body {
+  background-color: #6fa7e7 !important;
+}
 
-  .no-shadow:focus {
-    box-shadow: none;
-  }
+.no-shadow:focus {
+  box-shadow: none;
+}
