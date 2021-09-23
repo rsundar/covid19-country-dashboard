@@ -79,7 +79,7 @@ export default function Home() {
       <Row className="pt-3 m-0 mt-4 bg-blue1" style={{ cursor: 'pointer' }}>
         <Row>
           <Col xs={12} sm={12} md={2}>
-            <h6 className="text-white fw-bold m-0 p-2">STATS BY COUNTRY</h6>
+            <h6 className="text-white fw-bold m-0 p-2">CASES BY COUNTRY</h6>
           </Col>
           <Col xs={12} sm={12} md={2}>
             <FilterInput setFilter={setFilter} />
