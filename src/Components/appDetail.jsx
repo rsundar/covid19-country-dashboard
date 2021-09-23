@@ -53,7 +53,7 @@ export default function AppDetails() {
         </Row>
         <Row className="m-0 mt-4 bg-blue1">
           <h6 className="text-white fw-bold p-2 m-0">
-            {`${country.name.toUpperCase()} CASES BREAKDOWN`}
+            {`${country.name.toUpperCase()} REGION WISE BREAKDOWN`}
           </h6>
         </Row>
         {states}
