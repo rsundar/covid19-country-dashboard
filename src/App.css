@@ -15,3 +15,7 @@
   body {
     background-color: #6fa7e7 !important;
   }
+
+  .no-shadow:focus {
+    box-shadow: none;
+  }
