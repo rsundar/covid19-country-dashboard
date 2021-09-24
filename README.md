@@ -46,7 +46,7 @@ Run the following command to run the tests.
 
 `npm run test --env=jsdom`
 
-Launches the test runner in the interactive watch mode. The env flag is *important* in order to mock the browser functionality.
+Launches the test runner in the interactive watch mode. The env flag is **very important** in order to mock the browser functionality.
 
 ### Deployment
 
