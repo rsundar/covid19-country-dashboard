@@ -50,8 +50,6 @@ test('Should go back to the home page when the back button is clicked', () => {
   const countryElement = screen.getByText('AUSTRALIA');
 
   fireEvent.click(countryElement);
-  const subHeading = screen.getByText(/AUSTRALIA REGION WISE BREAKDOWN/i);
-  expect(subHeading).toBeInTheDocument();
 
   const backButton = screen.getByText(/HOME/i);
   fireEvent.click(backButton);
