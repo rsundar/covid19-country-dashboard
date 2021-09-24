@@ -44,9 +44,9 @@ You will also see any lint errors in the console.
 
 Run the following command to run the tests.
 
-`npm test`
+`npm run test --env=jsdom`
 
-Launches the test runner in the interactive watch mode.
+Launches the test runner in the interactive watch mode. The env flag is *important* in order to mock the browser functionality.
 
 ### Deployment
 
