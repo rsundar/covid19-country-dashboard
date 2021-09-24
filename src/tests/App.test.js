@@ -1,9 +1,9 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { addCountry } from './redux/data/covidData';
-import store from './redux/configStore';
-import App from './App';
+import { addCountry } from '../redux/data/covidData';
+import store from '../redux/configStore';
+import App from '../App';
 
 test('Should display the header', () => {
   render(

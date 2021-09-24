@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 import AppDetails from './Components/appDetail';
 import Home from './Components/home';
-import './App.css';
+import './styles/App.css';
 
 function App() {
   const { pathname } = useLocation();
