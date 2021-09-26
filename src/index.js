@@ -4,7 +4,7 @@ import './styles/index.css';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import store from './redux/configStore';
-import { fetchData } from './redux/data/covidData';
+import { fetchData } from './utils/Api';
 import App from './App';
 
 store.dispatch(fetchData);
