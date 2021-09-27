@@ -5,6 +5,8 @@ import { addCountry } from '../redux/data/covidData';
 import store from '../redux/configStore';
 import App from '../App';
 
+global.scrollTo = jest.fn();
+
 test('Should display the header', () => {
   render(
     <Provider store={store}>
@@ -33,7 +35,6 @@ test('Should go to the details page when a country is clicked', () => {
     </Provider>,
   );
   const countryElement = screen.getByText(/AUSTRALIA/i);
-
   fireEvent.click(countryElement);
   const subHeading = screen.getByText(/AUSTRALIA REGION WISE BREAKDOWN/i);
   expect(subHeading).toBeInTheDocument();
@@ -48,7 +49,6 @@ test('Should go back to the home page when the back button is clicked', () => {
     </Provider>,
   );
   const countryElement = screen.getByText('AUSTRALIA');
-
   fireEvent.click(countryElement);
 
   const backButton = screen.getByText(/HOME/i);
