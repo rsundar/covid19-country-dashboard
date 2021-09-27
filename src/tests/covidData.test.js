@@ -4,6 +4,7 @@ test('should return the initial state', () => {
   expect(reducer(undefined, {})).toEqual(
     {
       countries: [],
+      ready: false,
       totalConfirmed: 0,
     },
   );
@@ -12,6 +13,7 @@ test('should return the initial state', () => {
 test('should handle a country\'s data being added to the store', () => {
   const previousState = {
     countries: [],
+    ready: false,
     totalConfirmed: 0,
   };
 
@@ -30,6 +32,7 @@ test('should handle a country\'s data being added to the store', () => {
           total_confirmed: 4,
         },
       ],
+      ready: false,
       totalConfirmed: 0,
     },
   );
